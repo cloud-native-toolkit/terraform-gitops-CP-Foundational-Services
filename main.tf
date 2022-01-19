@@ -1,12 +1,12 @@
 locals {
-  name          = "my-module"
+  name          = "ibm-common-services"
   bin_dir       = module.setup_clis.bin_dir
   yaml_dir      = "${path.cwd}/.tmp/${local.name}/chart/${local.name}"
   service_url   = "http://${local.name}.${var.namespace}"
   values_content = {
   }
   layer = "services"
-  type  = "base"
+  type  = "operators"
   application_branch = "main"
   namespace = var.namespace
   layer_config = var.gitops_config[local.layer]
