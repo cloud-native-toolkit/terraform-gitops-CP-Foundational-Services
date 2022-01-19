@@ -1,6 +1,6 @@
-name: ""
+name: "ibm-common-service"
 type: gitops
-description: ""
+description: "GitOps module to install ibm-common-service (Cloud Pak Foundational Services)"
 tags:
   - tools
   - gitops
