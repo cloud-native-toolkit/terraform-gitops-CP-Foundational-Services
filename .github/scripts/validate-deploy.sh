@@ -55,7 +55,7 @@ fi
 
 
 count=0
-until kubectl get subscription "ibm-common-service-operator" -n "openshift-operators" || [[ $count -eq 20 ]]; do
+until kubectl get subscription -n "openshift-operators" | grep "ibm-common-service" || [[ $count -eq 20 ]]; do
   echo "Waiting for subscription/ibm-common-service-operator in openshift-operators"
   count=$((count + 1))
   sleep 15
