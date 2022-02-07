@@ -4,7 +4,7 @@
 
 subscriptions:
   subscription:
-    channel: stable-v1
+    channel: v3
     config:
       resources: {}
     installPlanApproval: Automatic
